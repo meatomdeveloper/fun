@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Heyloooooo</title>
+<style>
+p {
+text-align: center;
+font-size: 32px;
+font-family: Candara, Oswald;
+}
+img {
+display: block;
+margin: 0 auto;
+width: 25%;
+}
+</style>
+</head>
+<body>
+<p id="title">Can we hang out soon?</p>
+<img id="pic"src="https://media.tenor.com/zGm5acSjHCIAAAAM/cat-begging.gif">
+</body>
+<style>
+#title {
+position: fixed;
+top: 5%;
+left: 50%;
+transform: translate(-50%, 0);
+}
+#pic {
+position: fixed;
+top: 20%;
+left: 50%;
+transform: translate(-50%, 0);
+}
+#botao1 {
+position: fixed;
+top: 70%;
+left: 55%;
+transform: translate(-50%, -50%);
+}
+#botao2 {
+position: absolute;
+ left: 39%;
+  top: 68%;
+}
+</style>
+</head>
+<body>
+<button id="botao1">YES BABY!</button>
+<button id="botao2">NO</button>
+<script>
+const button2 = document.getElementById('botao2');
+button2.addEventListener('mouseover', function() {
+   this.style.top = (64 + (Math.random() * 26)) + "%",
+   this.style.left =(20 + (Math.random() * 60)) + "%"
+});
+
+</script>
+<script>document.getElementById('botao1').addEventListener('click', function() {
+alert('YAYY THANK U LOVE U');
+});
+</script>
+</body>
+</html>
